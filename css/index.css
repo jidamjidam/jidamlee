@@ -1,0 +1,466 @@
+@charset "utf-8";
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++  index.css +++++++++++++++++++++++++++++
++++++++++++++++++  LEEJIDAM_PORTFOLIO  ++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/*_*_*_*_*_* font-face(start)_*_*_*_*_*_*_*/
+
+
+
+
+
+
+/*_*_*_*_*_* font-face(end)_*_*_*_*_*_*_*/
+
+
+/*_*_*_*_*_* in-common(srart)_*_*_*_*_*_*_*/
+
+section { overflow: hidden; }
+
+body { font-family: 'Anton'; }
+
+
+
+
+
+/*_*_*_*_*_* in-common(end)_*_*_*_*_*_*_*/
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++  index.css +++++++++++++++++++++++++++++
++++++++++++++++++  LEEJIDAM_PORTFOLIO  ++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/*_*_*_*_*_* mobile(start)_*_*_*_*_*_*_*/
+
+@media screen and ( max-width: 767px ) {
+
+
+    section.visual { overflow: hidden; position: relative; width: 100vw; height: 100vh; background: #fff;  }
+
+    section.visual div.inner_wrap { width: 85vw; height: 100%; }
+
+    header { overflow: hidden; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 100; }
+
+    header nav { position: relative;  z-index: 10; margin: 0 7.96875vw; text-align: center; }
+    header a { overflow: hidden; position: relative; font-size: 1em; }
+    header a:hover::after { content: ""; overflow: hidden; position: absolute; top: 50%; left: 50%; transform: translate(-50%) rotate(-8deg); width: 100%; height: 10px; background: #000; }
+    header a.active::after { content: ""; overflow: hidden; position: absolute; top: 50%; left: 50%; transform: translate(-50%) rotate(-8deg); width: 100%; height: 3px; background: #000; }
+    header a + a { margin-left: 1.5625vw; }
+    header a.active { color: red; }
+    header img { display: block; width: 66.25vw; object-fit: cover; margin: 3.90625vw 0; margin: 20px auto; }
+    header img:nth-of-type(1) { display: none; }
+
+
+    section.visual h1 { position: relative; font-size: 4.6875em; line-height: 1.2; text-align: center; }
+    section.visual h1:before { content: ""; position: absolute; top: 0; left: 50%; transform: translateX(-50%); display: block; width: 84.0625vw; height: 0.416vw; background: #000; }
+    section.visual h1:after { content: ""; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); display: block; width: 84.0625vw; height: 0.416vw; background: #000; }
+
+    section.visual div.hash_wrap { position: relative; font-size: 1em; text-align: right; margin: 0 7.96875vw; text-align: center; }
+    section.visual div.hash_wrap::after { content: ""; position: absolute; top: 100%; left: -7.96875vw; display: block; width: 84.0625vw; height: 0.416vw; background: #000; }
+    section.visual div.hash_wrap p { display: inline-block; padding-left: 1.5625vw; }
+    section.visual p.sub { font-size: 2em; line-height: 1; text-align: center; }
+
+
+
+    /* ----------------- section introduce --------------  */
+
+
+    section.introduce { overflow: hidden; position: relative; width: 100vw; height: 100vh; }
+
+    section.introduce div.inner_wrap { width: 90vw; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
+
+    section.introduce div.left_wrap h2 { display: none; }
+    section.introduce div.left_wrap img { display: none; }
+
+    section.introduce div.right_wrap { line-height: 1.5; }
+
+    
+    section.introduce div.right_wrap p._a:nth-last-of-type(1) { padding-bottom: 15px; }
+    section.introduce div.right_wrap div p._b { padding-bottom: 6px; }
+
+    section.introduce div.right_wrap p._b { font-size: 1.25em; }
+    section.introduce div.right_wrap p._a { font-size: 1em; font-family: 'NanumSquareNeo-Regular';  }
+
+    section.introduce div.intro_05 > p._a { display: inline-block; padding-right: 1.125vw; } 
+    section.introduce div.intro_06  { width: 100%; margin: auto; }
+    section.introduce div.intro_06 img { display: inline-block; width: 8.465341vw; object-fit: cover; padding-bottom: 10px; }
+    section.introduce div.intro_06 { line-height: 1.7; }
+
+     /* ----------------- section project --------------  */
+
+     section.pro { position: relative; overflow: hidden; position: relative; width: 100%; height: 100vh; }
+
+     section.njobclass { background: url("../images/img_index_project_bg_01_D.jpg") no-repeat center; background-size: cover; color: #FFE77A; }
+     section.tripko { background: url("../images/img_index_project_bg_02_D.jpg") no-repeat center; background-size: cover; color: #FFF; }
+     section.smellz { background: url("../images/img_index_project_bg_03_D.jpg") no-repeat center; background-size: cover; color: #F26835; }
+     section.eternalmusic { background: url("../images/img_index_project_bg_04_D.jpg") no-repeat center; background-size: cover; color: #FFF; }
+ 
+     section.pro div.inner_wrap { width: 90%; margin: 0 auto; text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+ 
+     section.pro div.top_wrap { width: 100%; font-size: 0.875em; padding-bottom: 40px; }
+     section.pro div.top_wrap p:nth-child(1) { float: left; }
+     section.pro div.top_wrap p:nth-child(2) { float: right; }
+ 
+     section.pro h2 { clear: both; font-size: 2.5em; line-height: 1.5; vertical-align: middle; }
+ 
+     section.pro p.sub { font-family: 'NanumSquareNeo-Bold'; font-size: 1em; padding-bottom: 30px; }
+     section.pro div.page_wrap { flex: 1; padding: 20px 0; }
+
+ 
+     section.pro a.detail { display: inline-block; width: 2.5em; height: 2.5em; }
+     section.pro a.go { display: inline-block; width: 2.5em; height: 2.5em; }
+ 
+     section.pro div.bottom_wrap { margin: auto; }
+     section.pro div.bottom_wrap video { width: 75vw; }
+     section.pro div.bottom_wrap p { width: 75vw; font-size: 1em; font-family: 'NanumSquareNeo-Reguler'; line-height: 1.5;  padding-bottom: 20px; margin: auto; }
+ 
+     section.njobclass a.detail { background: url("../images/img_ico_01_01.png") no-repeat center; background-size: 100%; }
+     section.njobclass a.go { background: url("../images/img_ico_01_02.png") no-repeat center; background-size: 100%; }
+     section.tripko a.detail { background: url("../images/img_ico_02_01.png") no-repeat center; background-size: 100%; }
+     section.tripko a.go { background: url("../images/img_ico_02_02.png") no-repeat center; background-size: 100%; }
+     section.smellz a.detail { background: url("../images/img_ico_03_01.png") no-repeat center; background-size: 100%; }
+     section.smellz a.go { background: url("../images/img_ico_03_02.png") no-repeat center; background-size: 100%; }
+     section.eternalmusic a.detail { background: url("../images/img_ico_02_01.png") no-repeat center; background-size: 100%; }
+     section.eternalmusic a.go { background: url("../images/img_ico_02_02.png") no-repeat center; background-size: 100%; }
+
+
+      /* ----------------- section artwork --------------  */
+ 
+      section.artwork { position: relative; overflow: hidden; position: relative; width: 100vw; height: 100vh; overflow-x: auto; overflow-y: hidden;  }
+ 
+      section.artwork div.inner_wrap_02 { position: relative; width: 100%; height: 100%; white-space: nowrap; overflow-x: auto; text-align: center; }
+      section.artwork h2 { font-size: 2em; width: 100%; padding: 40px 0px; }
+  
+      section.artwork div.inner_wrap_02 ul { display: flex; width: 500%; justify-content: space-around; transition: transform 0.3s ease; }
+      section.artwork div.inner_wrap_02 ul li { flex: 0 0 20%; float: left; text-align: center; }
+  
+      section.artwork div.inner_wrap_02 ul li a { overflow: hidden;display: inline-block; width: 75.375vw; height: 75.375vw; }
+      section.artwork div.inner_wrap_02 ul li img { width: 100%; object-fit: cover; }
+      section.artwork div.inner_wrap_02 p.name { width: 75.375vw; font-size: 1.5em; border-top: 3px solid black; border-bottom: 3px solid black; margin: 15px auto;  }
+      section.artwork div.inner_wrap_02 p.desc { font-family: 'NanumSquareNeo-Bold'; font-size: 13px; line-height: 1.5; }
+ 
+
+
+
+
+
+
+
+}
+
+
+
+/*_*_*_*_*_* mobile(end)_*_*_*_*_*_*_*/
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++  index.css +++++++++++++++++++++++++++++
++++++++++++++++++  LEEJIDAM_PORTFOLIO  ++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+
+/*_*_*_*_*_* tablet(start)_*_*_*_*_*_*_*/
+
+@media screen and ( min-width: 768px ) and ( max-width: 1024px ) {
+
+    section.visual { overflow: hidden; position: relative; width: 100vw; height: 100vh; background: #fff;  }
+
+    section.visual div.inner_wrap { width: 80%; height: 100%; }
+
+    header { overflow: hidden; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 100; }
+
+    header nav { position: relative;  z-index: 10; }
+    header a { overflow: hidden; position: relative; font-size: 2.25em; }
+    header a:hover::after { content: ""; overflow: hidden; position: absolute; top: 50%; left: 50%; transform: translate(-50%) rotate(-8deg); width: 100%; height: 10px; background: #000; }
+    header a.active::after { content: ""; overflow: hidden; position: absolute; top: 50%; left: 50%; transform: translate(-50%) rotate(-8deg); width: 100%; height: 10px; background: #000; }
+    header a + a { margin-left: 1.5625vw; }
+    header a:hover { color: red; }
+    header a.active { color: red; }
+    header img { display: inline-block; width: 50%; object-fit: cover; margin: 3.90625vw 0; }
+    header img:nth-of-type(1) { filter: /*opacity(0.4)*/ grayscale(1) ; }
+
+
+    section.visual h1 { position: relative; font-size: 22.62625vw; line-height: 1.2; }
+    section.visual h1:before { content: ""; position: absolute; top: 0; left: 0; display: block; width: 200%; height: 0.416vw; background: #000; }
+    section.visual h1:after { content: ""; position: absolute; bottom: 0; left: 0; display: block; width: 200%; height: 0.416vw; background: #000; }
+
+    section.visual div.hash_wrap { position: relative; font-size: 2.25em; text-align: right;}
+    section.visual div.hash_wrap::after { content: ""; position: absolute; top: 100%; left: 0; display: block; width: 200%; height: 0.416vw; background: #000; }
+    section.visual div.hash_wrap p { display: inline-block; padding-left: 1.5625vw; }
+    section.visual p.sub { font-size: 4.5em; line-height: 1; text-align: center; }
+
+
+    /* ----------------- section introduce --------------  */
+
+
+    section.introduce { overflow: hidden; position: relative; width: 100%; height: 100vh; }
+
+    section.introduce div.inner_wrap { width: 75vw; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
+
+    section.introduce div.left_wrap h2 { font-size: 3.125em; padding-bottom: 40px; }
+    section.introduce div.left_wrap img { display: none; }
+
+    section.introduce div.right_wrap { line-height: 1.5; }
+    section.introduce div.right_wrap div:nth-child(1) { float: left; width: 50%; }
+    section.introduce div.right_wrap div:nth-child(3) { float: left; width: 50%; }
+    section.introduce div.right_wrap div:nth-child(2) { float: right; width: 50%; }
+    section.introduce div.right_wrap div:nth-child(4) { float: right; width: 50%; }
+    
+    section.introduce div.right_wrap p._a:nth-last-of-type(1) { padding-bottom: 30px; }
+    section.introduce div.right_wrap div p._b { padding-bottom: 10px; }
+
+    section.introduce div.right_wrap p._b { font-size: 2.25em; }
+    section.introduce div.right_wrap p._a { font-size: 1.5em; font-family: 'NanumSquareNeo-Regular';  }
+
+    section.introduce div.intro_05 > p._a { display: inline-block; padding-right: 1.125vw; } 
+    section.introduce div.intro_06  { width: 50%; margin: auto; }
+    section.introduce div.intro_06 img { display: inline-block; width: 8.465341vw; object-fit: cover; padding-bottom: 20px; }
+    section.introduce div.intro_06 img:nth-of-type(1) { margin-left: 15px; }
+    section.introduce div.intro_06 img:nth-of-type(3) { margin-right: 15px; }
+    section.introduce div.intro_06 { line-height: 1.8; }
+
+     /* ----------------- section project --------------  */
+
+     section.pro { position: relative; overflow: hidden; position: relative; width: 100%; height: 100vh; }
+
+     section.njobclass { background: url("../images/img_index_project_bg_01_D.jpg") no-repeat center; background-size: cover; color: #FFE77A; }
+     section.tripko { background: url("../images/img_index_project_bg_02_D.jpg") no-repeat center; background-size: cover; color: #FFF; }
+     section.smellz { background: url("../images/img_index_project_bg_03_D.jpg") no-repeat center; background-size: cover; color: #F26835; }
+     section.eternalmusic { background: url("../images/img_index_project_bg_04_D.jpg") no-repeat center; background-size: cover; color: #FFF; }
+ 
+     section.pro div.inner_wrap { width: 90%; margin: 0 auto; text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+ 
+     section.pro div.top_wrap { width: 100%; font-size: 1.875em; padding-bottom: 60px; }
+     section.pro div.top_wrap p:nth-child(1) { float: left; }
+     section.pro div.top_wrap p:nth-child(2) { float: right; }
+ 
+     section.pro h2 { clear: both; font-size: 7.875em; line-height: 1.5; vertical-align: middle; }
+ 
+     section.pro p.sub { font-family: 'NanumSquareNeo-Bold'; font-size: 1.875em; padding-bottom: 50px; }
+     section.pro div.page_wrap { flex: 1; padding: 1.875em 0; }
+ 
+     section.pro a.detail { display: inline-block; width: 3em; height: 3em; }
+     section.pro a.go { display: inline-block; width: 3em; height: 3em; }
+ 
+     section.pro div.bottom_wrap { margin: auto; }
+     section.pro div.bottom_wrap video { width: 66.40625vw; }
+     section.pro div.bottom_wrap p { width: 50%; font-size: 1.25em; font-family: 'NanumSquareNeo-Reguler'; line-height: 1.5;  padding-bottom: 30px; margin: auto; }
+ 
+     section.njobclass a.detail { background: url("../images/img_ico_01_01.png") no-repeat center; background-size: 100%; }
+     section.njobclass a.go { background: url("../images/img_ico_01_02.png") no-repeat center; background-size: 100%; }
+     section.tripko a.detail { background: url("../images/img_ico_02_01.png") no-repeat center; background-size: 100%; }
+     section.tripko a.go { background: url("../images/img_ico_02_02.png") no-repeat center; background-size: 100%; }
+     section.smellz a.detail { background: url("../images/img_ico_03_01.png") no-repeat center; background-size: 100%; }
+     section.smellz a.go { background: url("../images/img_ico_03_02.png") no-repeat center; background-size: 100%; }
+     section.eternalmusic a.detail { background: url("../images/img_ico_02_01.png") no-repeat center; background-size: 100%; }
+     section.eternalmusic a.go { background: url("../images/img_ico_02_02.png") no-repeat center; background-size: 100%; }
+ 
+ 
+     /* ----------------- section artwork --------------  */
+ 
+     section.artwork { position: relative; overflow: hidden; position: relative; width: 100vw; height: 100vh; overflow-x: auto; overflow-y: hidden;  }
+ 
+     section.artwork div.inner_wrap_02 { position: relative; width: 100%; height: 100%; white-space: nowrap; overflow-x: auto; text-align: center; }
+     section.artwork h2 { font-size: 2.875em; width: 100%; padding: 80px 0; }
+ 
+     section.artwork div.inner_wrap_02 ul { display: flex; width: 500%; justify-content: space-around; transition: transform 0.3s ease; }
+     section.artwork div.inner_wrap_02 ul li { flex: 0 0 20%; float: left; text-align: center; }
+ 
+     section.artwork div.inner_wrap_02 ul li a { overflow: hidden;display: inline-block; width: 54.6875vw; height: 54.6875vw; }
+     section.artwork div.inner_wrap_02 ul li img { width: 100%; object-fit: cover; }
+     section.artwork div.inner_wrap_02 p.name { width: 54.6875vw; font-size: 2em; border-top: 3px solid black; border-bottom: 3px solid black; margin: 40px auto;  }
+     section.artwork div.inner_wrap_02 p.desc { font-family: 'NanumSquareNeo-Bold'; font-size: 1.25em; line-height: 1.5; }
+
+     
+
+
+
+
+
+
+
+}
+
+
+/*_*_*_*_*_* tablet(end)_*_*_*_*_*_*_*/
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++  index.css +++++++++++++++++++++++++++++
++++++++++++++++++  LEEJIDAM_PORTFOLIO  ++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+
+/*_*_*_*_*_* desktop(start)_*_*_*_*_*_*_*/
+
+@media screen and ( min-width: 1025px ) {
+
+
+    section.visual { overflow: hidden; position: relative; width: 100%; height: 100vh; background: #fff;  }
+
+    section.visual div.inner_wrap { width: 80%; height: 100%; }
+
+    header { overflow: hidden; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 100; }
+
+    header nav { position: relative;  z-index: 10; }
+    header a { overflow: hidden; position: relative; font-size:3.375em; }
+    header a:hover:after { content: ""; overflow: hidden; position: absolute; top: 50%; left: 50%; transform: translate(-50%) rotate(-8deg); width: 100%; height: 10px; background: #000; }
+    header a.active:after { content: ""; overflow: hidden; position: absolute; top: 50%; left: 50%; transform: translate(-50%) rotate(-8deg); width: 100%; height: 10px; background: #000; }
+    header a + a { margin-left: 1.5625vw; }
+    header a:hover { color: red; }
+    header a.active { color: red; }
+    header img { display: none; }
+
+    section.visual h1 { position: relative; font-size: 20em; line-height: 1.2; }
+    section.visual h1:before { content: ""; position: absolute; top: 0; left: 0; display: block; width: 200%; height: 6px; background: #000; }
+    section.visual h1:after { content: ""; position: absolute; bottom: 0; left: 0; display: block; width: 200%; height: 6px; background: #000; }
+
+    section.visual div.hash_wrap { position: relative; font-size: 2.875em; text-align: right; line-height: 1.5; }
+    section.visual div.hash_wrap:after { content: ""; position: absolute; top: 100%; left: 0; display: block; width: 200%; height: 6px; background: #000; }
+    section.visual div.hash_wrap p { display: inline-block; padding-left: 1.5625vw; }
+    section.visual p.sub { font-size: 8.75em; line-height: 1.2; text-align: center; }
+
+
+
+
+
+
+    /* ----------------- section introduce --------------  */
+
+
+    section.introduce { overflow: hidden; position: relative; width: 100%; height: 100vh; }
+
+    section.introduce div.inner_wrap { display: flex; align-items: center; width: 75vw; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+    section.introduce div.left_wrap { flex: 0 0 50%;  }
+    section.introduce div.left_wrap h2 { font-size: 3.125em; padding-bottom: 1.5625vw; }
+    section.introduce div.left_wrap img { width: 26.5625vw; object-fit: cover; }
+
+    section.introduce div.right_wrap { flex: 0 0 50%; line-height: 1.5; }
+    section.introduce div.right_wrap div:nth-child(1) { float: left; width: 50%; }
+    section.introduce div.right_wrap div:nth-child(3) { float: left; width: 50%; }
+    section.introduce div.right_wrap div:nth-child(2) { float: right; width: 50%; }
+    section.introduce div.right_wrap div:nth-child(4) { float: right; width: 50%; }
+    section.introduce div.right_wrap div p._b { padding-bottom: 0.520833333vw; }
+    section.introduce div.right_wrap div p._a { padding-bottom: 1.041666vw; }
+    section.introduce div.right_wrap p._b { font-size: 2.25em; }
+    section.introduce div.right_wrap p._a { font-size: 1.5em; font-family: 'NanumSquareNeo-Bold';  }
+
+    section.introduce div.intro_05 > p._a { display: inline-block; padding-right: 1.125vw; } 
+    section.introduce div.intro_06 img { width: 3.6458vw; object-fit: cover; padding-bottom: 20px; }
+
+
+
+    /* ----------------- section project --------------  */
+
+    section.pro { position: relative; overflow: hidden; position: relative; width: 100%; height: 100vh; }
+
+    section.njobclass { background: url("../images/img_index_project_bg_01_D.jpg") no-repeat center; background-size: cover; color: #FFE77A; }
+    section.tripko { background: url("../images/img_index_project_bg_02_D.jpg") no-repeat center; background-size: cover; color: #FFF; }
+    section.smellz { background: url("../images/img_index_project_bg_03_D.jpg") no-repeat center; background-size: cover; color: #F26835; }
+    section.eternalmusic { background: url("../images/img_index_project_bg_04_D.jpg") no-repeat center; background-size: cover; color: #FFF; }
+
+    section.pro div.inner_wrap { width: 90%; margin: 0 auto; text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
+    section.pro div.top_wrap { width: 100%; font-size: 2.5vw; }
+    section.pro div.top_wrap p:nth-child(1) { float: left; }
+    section.pro div.top_wrap p:nth-child(2) { float: right; }
+
+    section.pro h2 { clear: both; font-size: 11.87em; line-height: 1.2; vertical-align: middle; }
+
+    section.pro p.sub { font-family: 'NanumSquareNeo-Bold'; font-size: 2.25em; padding-bottom: 50px; }
+    section.pro div.page_wrap { flex: 1; padding: 1.875em; }
+
+    section.pro a.detail { display: inline-block; width: 3em; height: 3em; }
+    section.pro a.go { display: inline-block; width: 3em; height: 3em; }
+
+    section.pro div.bottom_wrap { display: flex; align-items: center; width: 70%; margin: auto; }
+    section.pro div.bottom_wrap video { width: 33.33333vw; }
+    section.pro div.bottom_wrap p { font-size: 1.25vw; font-family: 'NanumSquareNeo-Reguler'; line-height: 1.5;  padding-bottom: 30px;  }
+
+    section.njobclass a.detail { background: url("../images/img_ico_01_01.png") no-repeat center; background-size: 100%; }
+    section.njobclass a.go { background: url("../images/img_ico_01_02.png") no-repeat center; background-size: 100%; }
+    section.tripko a.detail { background: url("../images/img_ico_02_01.png") no-repeat center; background-size: 100%; }
+    section.tripko a.go { background: url("../images/img_ico_02_02.png") no-repeat center; background-size: 100%; }
+    section.smellz a.detail { background: url("../images/img_ico_03_01.png") no-repeat center; background-size: 100%; }
+    section.smellz a.go { background: url("../images/img_ico_03_02.png") no-repeat center; background-size: 100%; }
+    section.eternalmusic a.detail { background: url("../images/img_ico_02_01.png") no-repeat center; background-size: 100%; }
+    section.eternalmusic a.go { background: url("../images/img_ico_02_02.png") no-repeat center; background-size: 100%; }
+
+
+    /* ----------------- section artwork --------------  */
+
+    section.artwork { position: relative; overflow: hidden; position: relative; width: 100vw; height: 100vh; overflow-x: auto; overflow-y: hidden; }
+
+    section.artwork div.inner_wrap_02 { position: relative; top: 2.96296296vw;  width: 100%; height: 100%; white-space: nowrap; overflow-x: auto;  }
+    section.artwork h2 { font-size: 3.5vw; width: 90%; padding-bottom: 3.125vw; margin-left: 7vw; }
+
+    section.artwork div.inner_wrap_02 ul { display: flex; width: 180%; justify-content: space-around; transition: transform 0.3s ease;  }
+    section.artwork div.inner_wrap_02 ul li { flex: 0 0 0%; float: left; text-align: center; }
+
+    section.artwork div.inner_wrap_02 ul li a { overflow: hidden; display: block; width: 21.875vw; height: 21.875vw; }
+    section.artwork div.inner_wrap_02 ul li img { width: 21.875vw; object-fit: cover; }
+    section.artwork div.inner_wrap_02 ul li:hover img { transform: scale(1.1); transition: transform 0.3s; }
+    section.artwork div.inner_wrap_02 p.name { width: 100%; font-size: 1.666666vw; border-top: 3px solid black; border-bottom: 3px solid black; margin: 2.0833333vw 0; }
+    section.artwork div.inner_wrap_02 p.desc { font-family: 'NanumSquareNeo-Bold'; font-size: 1em; line-height: 1.5; }
+
+
+
+
+	
+
+
+}
+
+
+/*_*_*_*_*_* desktop(end)_*_*_*_*_*_*_*/

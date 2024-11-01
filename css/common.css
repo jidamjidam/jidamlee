@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++  common.css ++++++++++++++++++++++++++++
++++++++++++++++++  LEEJIDAM_PORTFOLIO  ++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/*_*_*_*_*_* font-face(start)_*_*_*_*_*_*_*/
+
+/* anton-regular - latin */
+@font-face {
+
+    font-family: 'Anton';
+    src: url('../font/anton-v25-latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('../font/anton-v25-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../font/anton-v25-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../font/anton-v25-latin-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+         url('../font/anton-v25-latin-regular.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+         url('../font/anton-v25-latin-regular.svg#Anton') format('svg'); /* Legacy iOS */
+  }
+
+
+	@font-face {
+		font-family: 'NanumSquareNeo-Regular';
+		src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot);
+		src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.ttf) format("truetype");
+	}
+	
+	@font-face {
+		font-family: 'NanumSquareNeo-Bold';
+		src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot);
+		src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.ttf) format("truetype");
+	}
+	
+	@font-face {
+		font-family: 'NanumSquareNeo-ExtraBold';
+		src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.eot);
+		src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.ttf) format("truetype");
+	}
+	
+
+  
+
+
+
+
+/*_*_*_*_*_* font-face(end)_*_*_*_*_*_*_*/
+
+
+/*_*_*_*_*_* in-common(srart)_*_*_*_*_*_*_*/
+
+body { overflow-x: hidden; }
+
+.FI_grp { transition: transform 0.75s, opacity 0.75s; }
+
+   .FI_grp[class ~= "fi_0"] { transform: translate(0, 0); opacity: 0; }
+   .FI_grp[class ~= "fi_1"] { transform: translate(0, -50px); opacity: 0; }
+   .FI_grp[class ~= "fi_2"] { transform: translate(50px, 0); opacity: 0; }
+   .FI_grp[class ~= "fi_3"] { transform: translate(0, 50px); opacity: 0; }
+   .FI_grp[class ~= "fi_4"] { transform: translate(-50px, 0); opacity: 0; }
+
+   .FI_grp[class ~= "active"] { transform: translate(0, 0); opacity: 1; }
+
+
+
+
+
+/*_*_*_*_*_* in-common(end)_*_*_*_*_*_*_*/
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++  common.css ++++++++++++++++++++++++++++
++++++++++++++++++  LEEJIDAM_PORTFOLIO  ++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+/*_*_*_*_*_* mobile(start)_*_*_*_*_*_*_*/
+
+@media screen and ( max-width: 767px ) {
+
+
+
+
+
+}
+
+
+
+/*_*_*_*_*_* mobile(end)_*_*_*_*_*_*_*/
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++  common.css ++++++++++++++++++++++++++++
++++++++++++++++++  LEEJIDAM_PORTFOLIO  ++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+
+/*_*_*_*_*_* tablet(start)_*_*_*_*_*_*_*/
+
+@media screen and ( min-width: 768px ) and ( max-width: 1024px ) {
+
+
+
+
+}
+
+
+/*_*_*_*_*_* tablet(end)_*_*_*_*_*_*_*/
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++  common.css ++++++++++++++++++++++++++++
++++++++++++++++++  LEEJIDAM_PORTFOLIO  ++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+
+
+/*_*_*_*_*_* desktop(start)_*_*_*_*_*_*_*/
+
+@media screen and ( min-width: 1025px ) {
+
+	
+
+
+}
+
+
+/*_*_*_*_*_* desktop(end)_*_*_*_*_*_*_*/
