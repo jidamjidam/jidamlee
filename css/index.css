@@ -449,6 +449,7 @@ body { font-family: 'Anton'; }
     section.artwork div.inner_wrap_02 ul li { flex: 0 0 0%; float: left; text-align: center; }
 
     section.artwork div.inner_wrap_02 ul li a { overflow: hidden; display: block; width: 21.875vw; height: 21.875vw; }
+    section.artwork div.inner_wrap_02 ul li div { display: none }
     section.artwork div.inner_wrap_02 ul li img { width: 21.875vw; object-fit: cover; }
     section.artwork div.inner_wrap_02 ul li:hover img { transform: scale(1.1); transition: transform 0.3s; }
     section.artwork div.inner_wrap_02 p.name { width: 100%; font-size: 1.666666vw; border-top: 3px solid black; border-bottom: 3px solid black; margin: 2.0833333vw 0; }
