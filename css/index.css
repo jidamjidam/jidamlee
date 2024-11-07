@@ -418,15 +418,15 @@ body { font-family: 'Anton'; }
 
     section.pro h2 { clear: both; font-size: 11.87em; line-height: 1.2; vertical-align: middle; }
 
-    section.pro p.sub { font-family: 'NanumSquareNeo-Bold'; font-size: 2.25em; padding-bottom: 50px; }
-    section.pro div.page_wrap { flex: 1; padding: 1.875em; }
+    section.pro p.sub { font-family: 'NanumSquareNeo-Bold'; font-size: 2.25em; padding-bottom: 3.125vw; }
+    section.pro div.page_wrap { flex: 1; padding: 5.25em; }
 
     section.pro a.detail { display: inline-block; width: 3em; height: 3em; }
     section.pro a.go { display: inline-block; width: 3em; height: 3em; }
 
-    section.pro div.bottom_wrap { display: flex; align-items: center; width: 70%; margin: auto; }
-    section.pro div.bottom_wrap video { width: 33.33333vw; }
-    section.pro div.bottom_wrap p { font-size: 1.25vw; font-family: 'NanumSquareNeo-Reguler'; line-height: 1.5;  padding-bottom: 30px;  }
+    section.pro div.bottom_wrap { display: flex; align-items: center; width: 60%; margin: auto; }
+    section.pro div.bottom_wrap video { width: 50%; }
+    section.pro div.bottom_wrap p { font-size: 1.25em; font-family: 'NanumSquareNeo-Reguler'; line-height: 1.5;  padding: 0 0 3.125vw;  }
 
     section.njobclass a.detail { background: url("../images/img_ico_01_01.png") no-repeat center; background-size: 100%; }
     section.njobclass a.go { background: url("../images/img_ico_01_02.png") no-repeat center; background-size: 100%; }
@@ -442,11 +442,11 @@ body { font-family: 'Anton'; }
 
     section.artwork { position: relative; overflow: hidden; position: relative; width: 100vw; height: 100vh; overflow-x: auto; overflow-y: hidden; }
 
-    section.artwork div.inner_wrap_02 { position: relative; top: 2.96296296vw;  width: 100%; height: 100%; white-space: nowrap; overflow-x: auto;  }
+    section.artwork div.inner_wrap_02 { display: flex; align-items: center; position: relative; top: 0; bottom: 0; margin: auto; width: 100%; height: 100%; white-space: nowrap; overflow-x: auto;  }
     section.artwork h2 { font-size: 3.5vw; width: 90%; padding-bottom: 3.125vw; margin-left: 7vw; }
 
     section.artwork div.inner_wrap_02 ul { display: flex; width: 180%; justify-content: space-around; transition: transform 0.3s ease;  }
-    section.artwork div.inner_wrap_02 ul li { flex: 0 0 0%; float: left; text-align: center; }
+    section.artwork div.inner_wrap_02 ul li { flex: 0 0 0%; float: left; text-align: center;  }
 
     section.artwork div.inner_wrap_02 ul li a { overflow: hidden; display: block; width: 21.875vw; height: 21.875vw; }
     section.artwork div.inner_wrap_02 ul li div { display: none }

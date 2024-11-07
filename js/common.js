@@ -60,7 +60,9 @@ window.addEventListener("load", function () {
         }
     };
     
+
     const isInView = (element) => {
+        if (!element) return false; // element가 null이나 undefined이면 false 반환
         const rect = element.getBoundingClientRect();
         return rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight);
     };
