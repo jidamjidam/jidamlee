@@ -164,6 +164,16 @@ body { overflow-x: hidden; }
 
 @media screen and ( min-width: 1025px ) {
 
+	.FI_grp { transition: transform 0.75s, opacity 0.75s; }
+
+   .FI_grp[class ~= "fi_0"] { transform: translate(0, 0); opacity: 0; } 
+   .FI_grp[class ~= "fi_1"] { transform: translate(0, -50px); opacity: 0; }   
+   .FI_grp[class ~= "fi_2"] { transform: translate(50px, 0); opacity: 0; } 
+   .FI_grp[class ~= "fi_3"] { transform: translate(0, 50px); opacity: 0; }
+   .FI_grp[class ~= "fi_4"] { transform: translate(-50px, 0); opacity: 0; }
+
+   .FI_grp[class ~= "active"] { transform: translate(0, 0); opacity: 1; }
+
 	
 
 

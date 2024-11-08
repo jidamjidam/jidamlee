@@ -15,7 +15,40 @@ window.addEventListener("load", function () {
     link.addEventListener('click', event => event.preventDefault());
   });
 
+  // active motion
+
+  let $FI_grps = document.querySelectorAll(".FI_grp");
+
+	window.addEventListener("scroll", function(e){
+		scroll_response_acts(e);
+	});
+
+	function scroll_response_acts(evt){
+		
+		let e = evt ? evt : window.event; 
+		let st_pos = window.scrollY || document.querySelector("html").scrollTop;
+		let st_winH = st_pos + window.innerHeight;
+		
+		$FI_grps.forEach((item, idx) => {
+			let pos_add = item.classList.contains("fi_1") ? 0 : 50;
+			if(st_winH >= (st_pos + item.getBoundingClientRect().top + pos_add)){
+				item.style.willChange = 'transform, opacity';
+				item.classList.add("active");
+				setTimeout(function(){item.style.willChange = 'auto';}, 750);
+			}
+			else if(st_winH < (st_pos + item.getBoundingClientRect().top)){
+				item.style.willChange = 'auto';
+				item.classList.remove("active");
+			}
+		});
+
+	}
+	scroll_response_acts();
+
+
+
   // visual 각 a 태그 선택시 섹션 이동
+
 
 
     // 모든 메뉴 항목과 섹션 요소를 가져옴
@@ -82,6 +115,8 @@ window.addEventListener("load", function () {
 
 
   if (!isMobile) {
+
+    
 
 
   }
