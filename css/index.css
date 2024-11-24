@@ -401,6 +401,7 @@ body { font-family: 'Anton'; }
 
 
 
+
     /* ----------------- section project --------------  */
 
     section.pro { position: relative; overflow: hidden; position: relative; width: 100%; height: 100vh; }
@@ -436,6 +437,15 @@ body { font-family: 'Anton'; }
     section.smellz a.go { background: url("../images/img_ico_03_02.png") no-repeat center; background-size: 100%; }
     section.eternalmusic a.detail { background: url("../images/img_ico_02_01.png") no-repeat center; background-size: 100%; }
     section.eternalmusic a.go { background: url("../images/img_ico_02_02.png") no-repeat center; background-size: 100%; }
+
+    section.njobclass a:hover { background: url("../images/img_ico_02_01.png") no-repeat center; background-size: 100%; }
+    section.njobclass a.go:hover { background: url("../images/img_ico_02_02.png") no-repeat center; background-size: 100%; }
+    section.tripko a.detail:hover { background: url("../images/img_ico_02_01_h.png") no-repeat center; background-size: 100%; }
+    section.tripko a.go:hover { background: url("../images/img_ico_02_02_h.png") no-repeat center; background-size: 100%; }
+    section.smellz a.detail:hover { background: url("../images/img_ico_03_01_h.png") no-repeat center; background-size: 100%; }
+    section.smellz a.go:hover { background: url("../images/img_ico_03_02_h.png") no-repeat center; background-size: 100%; }
+    section.eternalmusic a.detail:hover { background: url("../images/img_ico_02_01_h.png") no-repeat center; background-size: 100%; }
+    section.eternalmusic a.go:hover { background: url("../images/img_ico_02_02_h.png") no-repeat center; background-size: 100%; }
 
 
     /* ----------------- section artwork --------------  */
