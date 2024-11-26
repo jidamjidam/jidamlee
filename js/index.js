@@ -50,9 +50,7 @@ window.addEventListener("load", function () {
                 isHorizontalScroll = false;
             }
 
-            // 디버깅: 이벤트가 호출되었는지 확인
-            console.log("Wheel event deltaY:", event.deltaY);
-            console.log("현재 innerWrap.scrollLeft:", innerWrap.scrollLeft);
+
         }
     }, { passive: false }); // passive 옵션을 false로 설정
 
@@ -80,6 +78,41 @@ window.addEventListener("load", function () {
 
         }
         else {
+
+            let startX = 0; // 터치 시작 X 좌표
+            let startY = 0; // 터치 시작 Y 좌표
+
+            innerWrap.addEventListener('touchstart', function (event) {
+                startX = event.touches[0].clientX;
+                startY = event.touches[0].clientY;
+            }, { passive: true });
+
+            innerWrap.addEventListener('touchmove', function (event) {
+                if (isHorizontalScroll) {
+                    const currentX = event.touches[0].clientX;
+                    const currentY = event.touches[0].clientY;
+
+                    const diffX = startX - currentX;
+                    const diffY = startY - currentY;
+
+                    if (Math.abs(diffX) > Math.abs(diffY)) {
+                        // 가로 스크롤
+                        event.preventDefault(); // 기본 세로 스크롤 방지
+                        innerWrap.scrollLeft += diffX;
+
+                        const maxScrollLeft = innerWrap.scrollWidth - innerWrap.clientWidth;
+                        if (innerWrap.scrollLeft <= 0 && diffX < 0) {
+                            document.body.style.overflowY = 'scroll';
+                            isHorizontalScroll = false;
+                        } else if (innerWrap.scrollLeft >= maxScrollLeft && diffX > 0) {
+                            document.body.style.overflowY = 'scroll';
+                            isHorizontalScroll = false;
+                        }
+                    }
+                    startX = currentX;
+                    startY = currentY;
+                }
+            }, { passive: false });
 
 
 
