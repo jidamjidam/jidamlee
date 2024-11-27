@@ -26,8 +26,6 @@ window.addEventListener("load", function () {
         }
 
         // 디버깅: 스크롤 상태 확인
-        console.log("현재 스크롤 위치:", scrollTop);
-        console.log("가로 스크롤 활성화 상태:", isHorizontalScroll);
     });
 
     // 휠 이벤트 핸들러
