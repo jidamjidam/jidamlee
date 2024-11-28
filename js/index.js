@@ -25,7 +25,7 @@ window.addEventListener("load", function () {
             document.body.style.overflowY = 'scroll'; // 세로 스크롤 복구
         }
 
-        // 디버깅: 스크롤 상태 확인
+
     });
 
     // 휠 이벤트 핸들러
